@@ -1,0 +1,18 @@
+@extends('layouts.app')
+
+@section('content')
+    <div class="row justify-content-center">
+        <div class="col-md-8 m2">
+            <div class="card">
+                <div class="card-header">
+                    <a href="#">{{ $post->user->name }}</a>
+                    - {{ $post->title }}
+                </div>
+
+                <div class="card-body">
+                    {{ $post->body }}
+                </div>
+            </div>
+        </div>
+    </div>
+@endsection
